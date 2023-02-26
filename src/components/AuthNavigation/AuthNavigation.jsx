@@ -30,7 +30,7 @@ const AuthNavigation = () => {
             _hover={{ color: 'blue.500' }}
             _activeLink={{ color: 'blue.500' }}
           >
-            Sign In
+            Register
           </Link>
         </li>
       </Stack>

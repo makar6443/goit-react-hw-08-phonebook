@@ -1,10 +1,12 @@
 import { createSlice } from '@reduxjs/toolkit';
+import { isAnyOf } from '@reduxjs/toolkit';
+
 import storage from 'redux-persist/lib/storage';
 import { persistReducer } from 'redux-persist';
-import { isAnyOf } from '@reduxjs/toolkit';
 
 import { authRegisterThunk, authLoginThunk, authLogOutThunk } from './auth.thunk';
 import { STATUS } from 'constants/constants';
+
 import { Notify } from 'notiflix/build/notiflix-notify-aio';
 
 const authInitState = {

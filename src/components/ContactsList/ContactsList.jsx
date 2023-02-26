@@ -68,7 +68,6 @@ const ContactsList = () => {
             </Box>
           ))}
         </Box>
-
         {isOpen && deleteContactId && (
           <DeleteContact
             id={deleteContactId}

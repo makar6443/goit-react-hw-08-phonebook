@@ -19,7 +19,6 @@ const Filter = () => {
           name="filter"
           value={filter}
           onChange={e => dispatch(filterContacts(e.target.value))}
-          placeholder="Enter name"
         />
       </FormLabel>
     </Stack>

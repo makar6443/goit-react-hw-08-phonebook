@@ -40,7 +40,7 @@ const Form = () => {
           <FormLabel mr='0px'>
             Name
             <Input
-              minW='300px'
+            minW='300px'
               pl="1.5rem"
               type="text"
               name="name"
@@ -54,7 +54,7 @@ const Form = () => {
           <FormLabel>
             Number
             <Input
-              minW='300px'
+            minW='300px'
               pl="1.5rem"
               type="tel"
               name="number"

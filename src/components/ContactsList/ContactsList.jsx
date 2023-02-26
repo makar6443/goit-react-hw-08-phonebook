@@ -9,7 +9,7 @@ import DeleteContact from 'components/DeleteContact';
 import EditContact from 'components/EditContact';
 import { STATUS } from 'constants/constants';
 
-import { ButtonGroup, IconButton, Box, Text, useDisclosure } from '@chakra-ui/react';
+import { ButtonGroup, Button, Box, Text, useDisclosure } from '@chakra-ui/react';
 
 const ContactsList = () => {
   const [deleteContactId, setDeleteContactId] = useState('');
@@ -42,7 +42,7 @@ const ContactsList = () => {
                 {number}
               </Text>
               <ButtonGroup  mr={3}>
-                <IconButton
+                <Button
                   colorScheme="blue"
                   aria-label="Edit contact"
                   onClick={() => {
@@ -52,9 +52,10 @@ const ContactsList = () => {
                       setContactName(name);
                       setContactNumber(number);
                     });
-                  }}
-                />
-                <IconButton
+                  }}>
+                  Edit
+                  </Button>
+                  <Button
                   colorScheme="blue"
                   aria-label="Delete contact"
                   onClick={() => {
@@ -62,8 +63,9 @@ const ContactsList = () => {
                       setDeleteContactId(id);
                       onOpen();
                     });
-                  }}
-                />
+                  }}>
+                  Delete
+                </Button>
               </ButtonGroup>
             </Box>
           ))}
